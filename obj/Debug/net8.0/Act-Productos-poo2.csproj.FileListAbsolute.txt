@@ -134,3 +134,4 @@ C:\Users\Angel Flores\Desktop\EntityFramework y BD\Act-Productos-poo2\bin\Debug\
 C:\Users\Angel Flores\Desktop\EntityFramework y BD\Act-Productos-poo2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Angel Flores\Desktop\EntityFramework y BD\Act-Productos-poo2\obj\Debug\net8.0\Act-Productos-poo2.csproj.AssemblyReference.cache
 C:\Users\Angel Flores\Desktop\EntityFramework y BD\Act-Productos-poo2\obj\Debug\net8.0\Act-Prod.6C69FD56.Up2Date
+C:\Users\Angel Flores\Desktop\EntityFramework y BD\Act-Productos-poo2\obj\Debug\net8.0\Act-Productos-poo2.sourcelink.json
