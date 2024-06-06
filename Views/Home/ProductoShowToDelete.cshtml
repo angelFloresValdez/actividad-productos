@@ -1,0 +1,13 @@
+@model ProductoModel
+
+<form asp-controller="Home" asp-action="ProductoDelete" method="post">
+    <div class="card-body">
+        <h5 class="card-title">Información del producto</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">¿Seguro que desea borrar el producto?</h6>
+        <p class="card-text">Producto: @Model.NombreProd con cantidad de @Model.Cantidad</p>
+
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Borrar</button>
+        <a class="btn btn-secondary" asp-action="Productos">Cancelar</a>
+    </div>
+</form>

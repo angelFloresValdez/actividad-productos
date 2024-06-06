@@ -1,0 +1,32 @@
+@model ProductoModel
+
+@{
+    ViewData["Title"] = "Alta de productos";
+}
+
+<div class="text-center">
+    <h1 class="display-2">Insertar producto nuevo</h1>
+</div>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-controller="Home" asp-action="ProductosAdd" method="post">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre del producto</label>
+        <input type="text" class="form-control" id="nombre" name="NombreProd" placeholder="Escriba el producto" />
+    </div>
+    <div class="mb-3">
+        <label for="marca" class="form-label">Marca</label>
+        <input type="text" class="form-control" id="marca" name="Marca" placeholder="Escriba la marca a la que pertenece el producto" />
+    </div>
+    <div class="mb-3">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="text" class="form-control" id="cantidad" name="Cantidad" placeholder="Escriba la cantidad" />
+    </div>
+    <div class="mb-3">
+        <label for="precio" class="form-label">Precio</label>
+        <input type="text" class="form-control" id="precio" name="Precio" placeholder="Escriba el precio" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-controller="Home" asp-action="Productos" class="btn btn-secondary mb-3">Regresar</a>
+</form>
