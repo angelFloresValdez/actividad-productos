@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Act-Productos-poo2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae17423864bdd1e10a1969ee3d7c5833228c2d01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea1230a7b756f384886befc5bab78967192ac068")]
 [assembly: System.Reflection.AssemblyProductAttribute("Act-Productos-poo2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Act-Productos-poo2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

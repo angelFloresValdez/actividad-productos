@@ -1,33 +1,40 @@
 @model List<ProductoModel>
 
-<div class="text-center">
-    <h1><i><b>LISTA DE PRODUCTOS</b></i></h1>
-    <a asp-controller="Home" asp-action="ProductosAdd" class="btn btn-primary mb-3">Agregar Producto</a>
-</div>
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4"><i><b>LISTA DE PRODUCTOS</b></i></h1>
+        <a asp-controller="Home" asp-action="ProductosAdd" class="btn btn-primary mb-3">Agregar Producto</a>
+    </div>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">Acciones</th>
-            <th scope="col">Nombre del producto</th>
-            <th scope="col">Marca</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Precio</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var producto in Model)
-        {
-            <tr>
-                <td>
-                    <a class="btn btn-primary" asp-controller="Home" asp-action="ProductoEdit" asp-route-Id="@producto.Id">Editar</a>
-                    <a class="btn btn-danger" asp-controller="Home" asp-action="ProductoShowToDelete" asp-route-Id="@producto.Id">Borrar</a>
-                </td>
-                <td>@producto.NombreProd</td>
-                <td>@producto.Marca</td>
-                <td>@producto.Cantidad</td>
-                <td>@producto.Precio.ToString("C")</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Acciones</th>
+                    <th scope="col">Nombre del producto</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var producto in Model)
+                {
+                    <tr>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-outline-primary" asp-controller="Home" asp-action="ProductoEdit" asp-route-Id="@producto.Id">Editar</a>
+                                <span class="mx-1"></span>
+                                <a class="btn btn-outline-danger" asp-controller="Home" asp-action="ProductoShowToDelete" asp-route-Id="@producto.Id">Borrar</a>
+                            </div>
+                        </td>
+                        <td>@producto.NombreProd</td>
+                        <td>@producto.Marca</td>
+                        <td>@producto.Cantidad</td>
+                        <td>@producto.Precio.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
