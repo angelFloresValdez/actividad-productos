@@ -1,0 +1,13 @@
+@model CategoriaModel
+
+<form asp-controller="Categoria" asp-action="CategoriaDelete" method="post">
+    <div class="card-body">
+        <h5 class="card-title">Información de la categoria</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">¿Seguro que desea borrar la categoria?</h6>
+        <p class="card-text">Categoria: @Model.NombreCat con descripcion: @Model.Descripcion</p>
+
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-outline-danger">Borrar</button>
+        <a class="btn btn-outline-secondary" asp-action="ListCategoria">Cancelar</a>
+    </div>
+</form>

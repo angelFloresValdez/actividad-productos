@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Act_Productos_poo2.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240608051817_TablaCategorias")]
+    partial class TablaCategorias
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,9 +52,6 @@ namespace Act_Productos_poo2.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("CategoriaId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Marca")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -65,23 +65,7 @@ namespace Act_Productos_poo2.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoriaId");
-
                     b.ToTable("Productos");
-                });
-
-            modelBuilder.Entity("Act_Productos_poo2.Entities.Producto", b =>
-                {
-                    b.HasOne("Act_Productos_poo2.Entities.Categoria", "Categoria")
-                        .WithMany("productos")
-                        .HasForeignKey("CategoriaId");
-
-                    b.Navigation("Categoria");
-                });
-
-            modelBuilder.Entity("Act_Productos_poo2.Entities.Categoria", b =>
-                {
-                    b.Navigation("productos");
                 });
 #pragma warning restore 612, 618
         }

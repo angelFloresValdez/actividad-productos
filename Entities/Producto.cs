@@ -9,12 +9,17 @@ namespace Act_Productos_poo2.Entities
     {
 
          public Guid Id { get; set; }
-        public string NombreProd { get; set; }
+        public string? NombreProd { get; set; }
         public int Cantidad  { get; set; }
 
-        public string  Marca { get; set; }
+        public string?  Marca { get; set; }
 
         public int Precio  { get; set; }
+
+       public Guid? CategoriaId { get; set; }
+       public Categoria? Categoria{ get; set; }
+        
+      
 
 
     }

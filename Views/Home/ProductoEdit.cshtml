@@ -28,6 +28,14 @@
         <label for="precio" class="form-label">Precio</label>
         <input type="text" class="form-control" id="precio" asp-for="Precio" placeholder="Escriba el precio" />
     </div>
-    <button type="submit" class="btn btn-primary me-2">Guardar</button>
-        <a asp-controller="Home" asp-action="Productos" class="btn btn-secondary">Regresar</a>
+    <div class="mb-3">
+        <label for="categoria" class="form-label">Categoría</label>
+        <select class="form-control" id="categoria" asp-for="CategoriaId" asp-items="Model.ListCategorias">
+            <option value="">Seleccione una categoría</option>
+        </select>
+    </div>
+
+
+    <button type="submit" class="btn btn-outline-primary me-2">Guardar</button>
+        <a asp-controller="Home" asp-action="Productos" class="btn btn-outline-secondary">Regresar</a>
 </form>

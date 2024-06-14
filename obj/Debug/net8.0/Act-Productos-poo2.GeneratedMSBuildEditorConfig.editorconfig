@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Angel Flores\Desktop\EntityFramework y BD\Act-Productos-poo2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Angel Flores/Desktop/EntityFramework y BD/Act-Productos-poo2/Views/Categoria/CategoriaAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENhdGVnb3JpYUFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Angel Flores/Desktop/EntityFramework y BD/Act-Productos-poo2/Views/Categoria/CategoriaEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENhdGVnb3JpYUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Angel Flores/Desktop/EntityFramework y BD/Act-Productos-poo2/Views/Categoria/CategoriaShowToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENhdGVnb3JpYVNob3dUb0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Angel Flores/Desktop/EntityFramework y BD/Act-Productos-poo2/Views/Categoria/ListCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXExpc3RDYXRlZ29yaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Angel Flores/Desktop/EntityFramework y BD/Act-Productos-poo2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

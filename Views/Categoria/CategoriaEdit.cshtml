@@ -1,0 +1,26 @@
+@model CategoriaModel
+
+@{
+    ViewData["Title"] = "Editar Categoria";
+}
+
+<div class="text-center">
+    <h1 class="display-2">Editar Categoria</h1>
+</div>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-controller="Categoria" asp-action="CategoriaEdit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre de la categoria</label>
+        <input type="text" class="form-control" id="nombre" asp-for="NombreCat" placeholder="Escriba la categoria" />
+    </div>
+    <div class="mb-3">
+        <label for="descripcion" class="form-label">Descripcion</label>
+        <input type="text" class="form-control" id="descripcion" asp-for="Descripcion" placeholder="Escriba la descripcion de la categoria" />
+    </div>
+
+    <button type="submit" class="btn btn-outline-primary me-2">Guardar</button>
+        <a asp-controller="Categoria" asp-action="ListCategoria" class="btn btn-outline-secondary">Regresar</a>
+</form>
